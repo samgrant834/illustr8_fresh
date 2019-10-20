@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustr8 Home</title>
+    <link rel="stylesheet" type="text/css" href="css/design.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        var ml = {
+            timelines: {}
+        };
+
+    </script>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+            color: black;
+            overflow-x: hidden;
+            background-color: #F7F6F1;
+
+        }
+
+        .moving-letters {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 71vw;
+            bottom: 0;
+            margin: auto;
+            height: 200px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .santa_bg {
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            width: 100vw;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="logo">
+    <img src="images/illustr8-logo.jpg" alt="illustr8 logo"/>
+    
+    </div>  -->
+
+
+    <ul class="navbar">
+        <li><a href="index.html"><img src="images/illustr8-logo.jpg" alt="illutr8 logo"></a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <nav>
+            <li><a href="#bio">Bio</a></li>
+        </nav>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <nav>
+            <li><a href="#contact">Contact</a></li>
+        </nav>
+    </ul>
+
+
+
+    <img src="images/santa_advertising_cropped4.jpg" alt="santa on his slay" class="santa_phone">
+    <div class="santa_bg">
+
+    </div>
+    <div class="moving-letters">
+        <h1 class="ml8">
+            <!-- This is a class for all of the elements used to make the cirlce view portfolio animation button  -->
+            <span class="letters-container">
+                <span class="letters letters-left"><a href="portfolio.html">View <br> Portfolio</a></span>
+                <span class="letters bang"></span> <!-- Used to have a '!' at the end but it made "view portfolio" appear off centered -->
+            </span>
+            <span class="circle circle-white"></span> <!-- THe big white circle the pops off -->
+            <span class="circle circle-dark"></span> <!-- This makes the main circle filled with blue -->
+            <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span> <!-- The little dashed dark lines around the circle -->
+        </h1>
+    </div>
+
+    <div id="bio"></div>
+    <div class="showcase">
+        <h2>James Wakelin MA [Brighton, England] </h2>
+        <p>After attending AUT and completing a Bachelor of Graphic Design specialising in Illustration, James Wakelin worked as a freelance illustrator in Auckland, later also teaching at AUT. After moving to Europe in 1999 to undertake a Masters Degree in Illustration, he continued to work for clients both in New Zealand, as well as in England. Returning in 2004 he continues to illustrate for a varied range of clients including book and magazine publishers, as well as design firms, and continues to work as a portrait artist. James continues to teach at AUT, and acts as an examiner on both the MA and Honours Year courses.</p>
+    </div>
+
+    <!-- Homepage photo grid -->
+    <div class="grid">
+        <div class="column">
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/advertising%20small/westfieldsnowman-small.jpg" style="width:100%" alt="advertisment snowman" class="image">
+                <div class="middle">
+                    <div class="text">Advertisments</div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/books%20small/home-small.jpg" style="width:100%" alt="books" class="image">
+                <div class="middle">
+                    <div class="text">Books and Magazines</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/storyboards%20small/vendingmachine-small.jpg" style="width:100%" alt="storyboard" class="image">
+                <div class="middle">
+                    <div class="text">Storyboards</div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/linework%20small/error-message-small.jpg" style="width:100%" alt="linework face" class="image">
+                <div class="middle">
+                    <div class="text">linework</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="column">
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/portraits%20small/jean-luc-small.jpg" style="width:100%" alt="baby" class="image">
+                <div class="middle">
+                    <div class="text">Portraits</div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/Images/editorial%20small/drink-small.jpg" style="width:100%" alt="drink" class="image">
+
+                <div class="middle">
+                    <div class="text">Editorial</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column" id="bigger">
+            <div class="box">
+                <img src="http://www.illustr8.co.nz/images/other/9pukeko.jpg" style="width:100%" alt="pukeko" class="image">
+                <div class="middle">
+                    <div class="text">More images</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="showcase">
+        <br>
+        <br>
+        <h2>Showcasing images by James Wakelin</h2>
+        <p> Whether it’s a simple line drawing or a highly detailed rendering, we aim to produce works of excellence that meet your deadline, every time. James Wakelin has been illustrating and designing since 1993, working for clients both in New Zealand and overseas, with personal commissions, editorial work and work for larger agencies.</p>
+
+        <p>Mobile: +64 21 742 058</p>
+        <div id="contact"></div>
+
+        <a href="mailto:james@illustr8.co.nz?Subject=Hello%20again" style="color: black;">
+            <h3>Email: james@illustr8.co.nz</h3>
+        </a>
+    </div>
+
+
+    <script>
+        $("nav").find("a").click(function(e) {
+            e.preventDefault();
+            var section = $(this).attr("href");
+            $("html, body").animate({
+                scrollTop: $(section).offset().top
+            });
+        });
+
+        ml.timelines["ml8"] = anime.timeline({
+                loop: true
+            })
+            .add({
+                targets: '.ml8 .circle-white',
+                scale: [0, 3],
+                opacity: [1, 0],
+                easing: "easeInOutExpo",
+                rotateZ: 360,
+                duration: 1100
+            }).add({
+                targets: '.ml8 .circle-container',
+                scale: [0, 1], //the size of the little dashed lines around the circle at the start (0) and at the end (1) of the animation
+                duration: 1100,
+                easing: "easeInOutExpo",
+                offset: '-=1000'
+            }).add({
+                targets: '.ml8 .circle-dark',
+                scale: [0, 1], //the size of the filled in light blue circle at the start (0) and at the end (1) of the animation
+                duration: 1100,
+                easing: "easeOutExpo",
+                offset: '-=600'
+            }).add({
+                targets: '.ml8 .letters-left',
+                scale: [0, 1],
+                duration: 1200,
+                offset: '-=550'
+            }).add({
+                targets: '.ml8 .bang',
+                scale: [0, 1],
+                rotateZ: [45, 15],
+                duration: 1200,
+                offset: '-=1000'
+            }).add({
+                targets: '.ml8',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1400
+            });
+        anime({
+            targets: '.ml8 .circle-dark-dashed',
+            rotateZ: 360,
+            duration: 8000,
+            easing: "linear",
+            loop: true
+        });
+
+    </script>
+
+</body>
+
+</html>

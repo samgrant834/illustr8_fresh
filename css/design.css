@@ -1,0 +1,374 @@
+/* This is the CSS for the my illustr8 website remake */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    font-family: arial;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 5vw;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    font-size: 120%;
+    transition: 0.3s;
+}
+
+.navbar img {
+    height: 5vh;
+    width: auto;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    background: #555;
+    color: #f1f1f1;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.box {
+    position: relative;
+}
+
+.box:hover .image {
+    opacity: 0.45;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #F7F6F1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.button {
+    background-color: #F7F6F1;
+    /* lighter blue */
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* add some cool effects when hovering over a button */
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+#b1:hover {   /* All the buttons have unique colours when hovering above them */ 
+    background-color: #C3D690;
+}
+
+#b2:hover {
+    background-color: #90D6D4;
+}
+
+#b3:hover {
+    background-color: #909AD6;
+}
+
+#b4:hover {
+    background-color: #D690D6;
+}
+
+#b5:hover {
+    background-color: #F2D431;
+}
+
+#b6:hover {
+    background-color: #90D695;
+}
+
+#b7:hover {
+    background-color: #D69090;
+}
+
+
+.button1 {
+    border-radius: 15px;
+}
+
+.showcase {
+    background-color: #F7F6F1;
+    text-align: center;
+    padding: 50px 80px;
+    color: black;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+/* Create 4 equal columns */
+.column {
+    float: left;
+    width: 25%;
+}
+
+.grid {
+    box-sizing: border-box;
+}
+
+/* all bellow for the dynamic navigation button */
+
+
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+
+    -webkit-column-count: 5;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+#photos img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+
+}
+
+img:hover {
+    /* neeed to add some effects to when hovering over an image*/
+    /*  opacity: 0.25;  its not working correctly, show evidence of testing */
+}
+
+/* Create four rows next to each other */
+.row {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.row_client {
+    flex: 50%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.row_client {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 4vh;
+}
+
+.row img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+h1.ml8 {
+    font-weight: 900;
+    font-size: 4.5em;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+}
+
+.ml8 .letters-container {
+    /*maybe why letters are wrong */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 1em;
+}
+
+.ml8 .letters {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    line-height: 0.7em;
+    right: -0.12em;
+    top: -0.2em;
+}
+
+.ml8 .bang {
+    font-size: 1.4em;
+    top: auto;
+    left: -0.06em;
+}
+
+.ml8 .circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.ml8 .circle-white {
+    width: 3em;
+    height: 3em;
+    border: 2px dashed white;
+    border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+    width: 4.4em;
+    height: 4.4em;
+    background-color: #707070;
+    border-radius: 3em;
+    z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+    border-radius: 2.4em;
+    background-color: transparent;
+    border: 2px dashed #707070;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+/* media quaires below for responsive portfolio grid*/
+
+#photos img {}
+
+@media (max-width: 1200px) {
+
+    /* keep @media quires at the end*/
+    #photos {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 900px) {
+    #photos {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+
+    .row {
+        flex: 33%;
+        max-width: 33%;
+        padding: 0 4px;
+    }
+
+    /* Create three rows next to each other */
+    /*Code below makes slay image 100% width of screen*/
+    
+    santa_phone {
+        width: 100vw;
+    }
+    
+    .moving-letters {
+        float: center;
+    }
+}
+
+@media (max-width: 650px) {
+    #photos {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    .row {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+    }
+
+    /* Create two rows next to each other */
+
+
+}
+
+@media (max-width: 450px) {
+    #photos {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+
+    .row {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    /*?? Create just one row, good for mobile devices not working for some reason ??*/
+
+
+}
